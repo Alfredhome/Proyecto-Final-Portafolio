@@ -26,7 +26,7 @@ app.get('/Educacion', (req, res) => {
     res.render('Educacion')
 })
 app.get('/Habilidades', (req, res) => {
-    res.render('Habilidades')
+    res.render('habilidades')
 })
 
 app.get('/Contacto', (req, res) => {
