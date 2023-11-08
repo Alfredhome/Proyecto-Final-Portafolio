@@ -93,3 +93,9 @@ footer {
   border: none;
   cursor: pointer;
 }
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
