@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación</title>
+    <link rel="stylesheet" href="./assets/CSS/normalize.css">
+    <link rel="stylesheet" href="./assets/CSS/headers.css">
+    <link rel="stylesheet" href="./assets/CSS/educacion.css">
+</head>
+
+<body>
+
+    {{>header}}
+    <h1>DATOS ACADEMICOS</h1>
+    <div class="slideshow-contenedor">
+        <div class="slide">
+            <h4>Universidad Mariano Galvez</h4>
+            <img src="/images/UMG.png" alt="" class="umg">
+            <p>Ingeniería En Sistemas</p>
+            <p>Sololá Febrero 2020 | Agosto 2023 - 8vo. Semestre</p>
+        </div>
+        <div class="slide">
+            <h4>INED (Instituto Nacional De Educación Diversificado)</h4>
+            <img src="/images/INED.png" alt="" class="INDE">
+            <p>Bachillerato En Ciencias y Letras con Orientación en Computación</p>
+            <p>Sololá Enero 2018 | Octubre 2019</p>
+        </div>
+        <div class="slide">
+            <h4>Programa de Desarrollo de Liderazgo (Casa Inglesa)</h4>
+            <img src="/images/Ingles.png" alt="" class="Ingles">
+            <p>Beca curso inglés intensivo por 4 años con canadienses y estadounidenses</p>
+            <p>Panajachel, Sololá Enero 2018 | Octubre 2021</p>
+        </div>
+        <div class="slide">
+            <h4>INTECAP (Institución guatemalteca líder en capacitación)</h4>
+            <img src="/images/intecap.png" alt="" class="intecap">
+            <p>Curso de hardware y software</p>
+            <p>Julio 2018 | septiembre 2019</p>
+        </div>
+    </div>
+    <button class="anterior">&#10094;</button>
+    <button class="siguiente">&#10095;</button>
+    <script src="./assets/JS/educacion.js"></script>
+
+
+    {{>footer}}
+</body>
+
+</html>

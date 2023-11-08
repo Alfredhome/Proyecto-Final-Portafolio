@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador Léxico</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/headers.css">
+    <link rel="stylesheet" href="assets/CSS/proyecto2.css">
+</head>
+
+<body>
+
+    {{>header}}
+    <section><br>
+        <div class="caracteristicas"><br>
+            <h1>Analizador Léxico</h1>
+            <p>Este proyecto es una aplicación de escritorio diseñada para analizar léxicamente fragmentos de código
+                fuente
+                escritos en un lenguaje de
+                programación específico. Esta herramienta es capaz de escanear y analizar sintácticamente
+                el código, identificar tokens y generar un archivo Excel que presenta una representación estructurada de
+                los
+                tokens y su información asociada.
+            </p><br>
+
+        </div><br>
+        <div class="contenedor1">
+            <div class="carousel">
+                <img src="/images/capAnalizadorLexico.png" alt="" class="img1">
+                <img src="/images/CapAnlizadorLexico2.png" alt="" class="img2">
+                <img src="/images/capAnalizadorLexico3.png" alt="" class="img1">
+                <img src="/images/capAnalizadorLexico4.png" alt="" class="img2">
+            </div>
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div><br>
+        <div class="caracteristicas"><br>
+            <h2>Caracteristicas :</h2>
+            <p>
+            <ol>
+                <li>Escaneo de Código: Los usuarios pueden escribir o cargar código fuente desde un archivo
+                    externo. El analizador léxico puede procesar múltiples líneas de código, separando el texto en
+                    tokens individuales y determinando su categoría (identificadores, palabras clave, símbolos,
+                    literales, etc.).
+                </li>
+                <li>Análisis Léxico: El núcleo del proyecto es el analizador léxico, que reconoce y
+                    clasifica cada token del código. Puede identificar palabras clave del lenguaje, operadores,
+                    símbolos y otros elementos léxicos relevantes.
+                </li>
+                <li>Exportación a Excel: Los informes generados se pueden exportar a archivos Excel,
+                    lo que facilita su distribución y análisis posterior.
+                </li>
+                <li>Gestión de Archivos: La aplicación permite guardar y cargar configuraciones de análisis y
+                    archivos de código para un uso posterior.
+                </li>
+            </ol>
+            </p>
+            <h2>Tecnologias Usadas</h2>
+            <p>
+            <ul>
+                <li>C#: Lenguaje de programación principal para el desarrollo de esta aplicación</li>
+            </ul>
+            </p>
+            <p>
+            <ul>
+                <li>Interoperabilidad de Excel: Utilización de bibliotecas o enfoques para la generación y manipulación
+                    de
+                    archivos Excel.</li>
+            </ul>
+            </p>
+            <br>
+        </div>
+    </section>
+
+    <script src="./assets/JS/carusel.js"></script>
+
+    {{>footer}}
+
+</body>
+
+</html>

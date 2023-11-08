@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto1</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/headers.css">
+    <link rel="stylesheet" href="assets/CSS/proyecto1.css">
+</head>
+
+<body>
+    {{>header}}
+    <section><br>
+        <div class="caracteristicas"><br>
+            <h1>Sistema de Inscipcion de Alumnos</h1>
+            <p class="p1"> Este proyecto es una aplicación de escritorio desarrollada en el entorno de desarrollo
+                Microsoft
+                Visual Studio. Esta aplicación
+                permite a una institución educativa gestionar el proceso de inscripción de alumnos de manera
+                eficiente, utilizando una interfaz gráfica de usuario (GUI) desarrollada con Windows Forms y
+                una base de datos SQL Server para almacenar y administrar la información relacionada con los
+                alumnos y los cursos.
+            </p><br>
+
+        </div><br>
+
+        <div class="contenedor1">
+            <div class="carousel">
+                <img src="/images/capregistroAlumnos.jpeg" alt="" class="img1">
+                <img src="/images/capEliminarAlumno.jpeg" alt="" class=" img2">
+            </div>
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div><br>
+        <div class="caracteristicas"><br>
+            <h2>Caracteristicas :</h2>
+            <p>
+            <ol>
+                <li>Registro de Alumnos: El sistema permite ingresar y almacenar información relevante de los alumnos,
+                    como nombres, apellidos, fecha de nacimiento, dirección, número de teléfono, correo electrónico,
+                    entre otros.
+                </li>
+                <li>Almacenamiento de Datos: La información de inscripción de alumnos,
+                    cursos y otros datos relacionados se almacena en la base de datos.</li>
+                <li>Consulta y Búsqueda: Los administradores pueden buscar y consultar información de alumnos y cursos
+                    utilizando criterios de búsqueda, lo que facilita la recuperación de datos específicos.</li>
+                <li>Eliminación de Alumnos: Los administradores tienen la capacidad de eliminar registros de alumnos
+                    cuando
+                    sea necesario.
+                    Esta función garantiza que la información de alumnos sea actualizada y precisa.</li>
+            </ol>
+            </p>
+            <h2>Tecnologias Usadas</h2>
+            <p>
+            <ul>
+                <li>C#: Lenguaje de programación principal para el desarrollo de esta aplicación</li>
+            </ul>
+            <ul>
+                <li>C#: Lenguaje de programación principal para el desarrollo de esta aplicación</li>
+            </ul>
+            <ul>
+                <li>SQL: Server: Base de datos para el almacenamiento de datos.</li>
+            </ul>
+            <ul>
+                <li>Windows Forms: Para crear la interfaz gráfica de usuario.</li>
+            </ul>
+            <ul>
+                <li>Entity Framework (opcional): Para facilitar la interacción con la base de datos.
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <script src="./assets/JS/carusel.js"></script>
+
+    {{>footer}}
+</body>
+
+</html>

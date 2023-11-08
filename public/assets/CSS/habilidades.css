@@ -1,0 +1,392 @@
+body {
+  background-image: url("/images/business.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  font-weight: 800;
+}
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+.umg {
+  width: 200px;
+  height: 200px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.umg:hover {
+  transform: scale(1.1);
+}
+.INDE {
+  width: 190px;
+  height: 220px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.INDE:hover {
+  transform: scale(1.1);
+}
+.Ingles {
+  width: 180px;
+  height: 200px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.Ingles:hover {
+  transform: scale(1.1);
+}
+
+.intecap {
+  width: 170px;
+  height: 180px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.intecap:hover {
+  transform: scale(1.1);
+}
+.mongo {
+  width: 100px;
+  height: 110px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.mongo:hover {
+  transform: scale(1.1);
+}
+.node {
+  width: 100px;
+  height: 110px;
+  box-shadow: 10px;
+  filter: drop-shadow(10px 5px 6px #343333);
+  transition: transform 0.3s ease;
+}
+.node:hover {
+  transform: scale(1.1);
+}
+/* Estilos para el contenedor del slideshow */
+.slideshow-contenedor {
+  display: flex;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* Estilos para los slides */
+.slide {
+  flex: 0 0 100%;
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    rgba(55, 161, 154, 0.79) 5%,
+    rgba(129, 180, 221, 0.71) 95%
+  );
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+@keyframes entrada-anterior {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animación de salida para el botón "siguiente" */
+@keyframes salida-siguiente {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Estilos para los botones de navegación */
+.anterior {
+  background-image: linear-gradient(
+    90deg,
+    rgba(55, 161, 154, 0.79) 5%,
+    rgba(129, 180, 221, 0.71) 95%
+  );
+  position: absolute;
+  top: 370px;
+  left: 190px;
+  animation: entrada 0.5s forwards;
+}
+.siguiente {
+  background-image: linear-gradient(
+    90deg,
+    rgba(55, 161, 154, 0.79) 5%,
+    rgba(129, 180, 221, 0.71) 95%
+  );
+  border-radius: 1px;
+  position: absolute;
+  top: 370px;
+  right: 250px;
+  animation: salida 0.5s forwards;
+}
+
+.p1 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1px;
+}
+footer {
+  box-shadow: 0px -10px 15px -5px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  padding: 1%;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  text-align: center;
+  background-color: rgba(61, 243, 213, 0.387);
+  padding: 2%;
+}
+
+/* porgressbar */
+.progress-bar {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress {
+  flex: 1;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress {
+  flex: 1;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+.progress-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* sql */
+.progress-bar-sql {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-sql {
+  flex: 0.6;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-sql {
+  flex: 0.4;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-sql span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* css */
+.progress-bar-css {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-css {
+  flex: 0.75;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-css {
+  flex: 0.25;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-css span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* html */
+.progress-bar-html {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-html {
+  flex: 0.75;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-html {
+  flex: 0.25;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-html span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* boostrap */
+.progress-bar-b {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-b {
+  flex: 0.5;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-b {
+  flex: 0.5;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-b span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* otras tecnologias */
+.progress-bar-o {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-o {
+  flex: 0.25;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-o {
+  flex: 0.75;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-o span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ingles */
+.progress-bar-ingles {
+  margin-left: 15%;
+  width: 400px;
+  height: 20px;
+  display: flex;
+  position: relative;
+}
+
+.green-progress-ingles {
+  flex: 0.7;
+  background-color: rgb(15, 179, 15);
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.gray-progress-ingles {
+  flex: 0.3;
+  background-color: gray;
+  border-radius: 0 10px 10px 0;
+}
+
+.progress-bar-ingles span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

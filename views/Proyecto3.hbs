@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas de Monitoreo de Sistema</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/headers.css">
+    <link rel="stylesheet" href="assets/CSS/proyecto3.css">
+</head>
+
+<body>
+
+    {{>header}}
+    <section><br>
+        <div class="caracteristicas"><br>
+            <h1>Suite de Herramientas de Monitoreo de Sistema</h1>
+            <p>Este proyecto es una aplicación de escritorio
+                integral que proporciona una serie de herramientas diseñadas para analizar y supervisar diversos
+                aspectos del sistema operativo, hardware y software de una computadora. Esta suite permite a los
+                usuarios obtener información detallada sobre su sistema, administrar tareas, analizar el
+                rendimiento y monitorear el estado de la red de una forma más sencilla.
+            </p><br>
+
+        </div><br>
+
+        <div class="contenedor1">
+            <div class="carousel">
+                <img src="/images/CapHerramienta.png" alt="" class="img1">
+                <img src="/images/CapHerramienta1.png" alt="" class="img2">
+                <img src="/images/CapHerramienta2.png" alt="" class="img1">
+                <img src="/images/CapHerramienta3.png" alt="" class="img2">
+                <img src="/images/CapHerramienta4.png" alt="" class="img1">
+                <img src="/images/CapHerramienta5.png" alt="" class="img2">
+            </div>
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div><br>
+        <div class="caracteristicas"><br>
+            <h2>Caracteristicas :</h2>
+            <p>
+            <ol>
+                <li>Interfaz de Usuario Centralizada: La aplicación cuenta con una interfaz de usuario intuitiva y
+                    unificada desarrollada con C# y Windows Forms. La interfaz proporciona acceso fácil a todas
+                    las herramientas integradas.
+                </li>
+                <li>Ver Versión de Windows: Los usuarios pueden obtener información sobre la versión
+                    de Windows instalada en la computadora, lo que brinda una visión general del sistema operativo.
+                </li>
+                <li>Administrador de Tareas: La suite incorpora una herramienta de administración de tareas que
+                    permite a los usuarios ver y finalizar procesos en ejecución, lo que es útil para liberar
+                    recursos y solucionar problemas de rendimiento.
+                </li>
+                <li>Información de Hardware y Software: Proporciona detalles sobre el hardware instalado,
+                    como el procesador, la memoria RAM, el almacenamiento y otros componentes.
+                    También ofrece una lista de software instalado en la computadora.
+                </li>
+                <li>Ver Redes: Los usuarios pueden acceder a información sobre las conexiones de red,
+                    direcciones IP, adaptadores de red y otras propiedades de red.
+                </li>
+                <li>Rendimiento de CPU y RAM: La suite monitorea y muestra gráficamente el uso de la CPU
+                    y la memoria RAM en tiempo real, lo que permite a los usuarios evaluar el rendimiento
+                    y detectar cuellos de botella.
+                </li><br>
+            </ol>
+            </p>
+            <h2>Tecnologias Usadas</h2>
+            <p>
+            <ul>
+                <li>C#: Lenguaje de programación principal para el desarrollo de esta aplicación</li>
+            </ul>
+            </p>
+            <p>
+            <ul>
+                <li>Gráficos en Tiempo Real: Implementación de gráficos para mostrar el rendimiento de la CPU, RAM y red
+                    en
+                    tiempo real.</li>
+            </ul>
+            </p><br>
+        </div>
+    </section>
+    <script src="./assets/JS/carusel.js"></script>
+
+    {{>footer}}
+</body>
+
+</html>

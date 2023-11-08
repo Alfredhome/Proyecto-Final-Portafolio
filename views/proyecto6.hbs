@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion Yargs</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/headers.css">
+    <link rel="stylesheet" href="assets/CSS/proyecto3.css">
+</head>
+
+<body>
+
+    {{>header}}
+    <section><br>
+        <div class="caracteristicas"><br>
+            <h1>Aplicacion Yargs</h1>
+            <p>Es una aplicación de línea de comandos que permite a los usuarios
+                crear tablas
+                de multiplicar personalizadas en JavaScript. A través de la biblioteca Yargs, esta aplicación ofrece una
+                forma sencilla
+                y eficiente de definir las especificaciones de la tabla de multiplicar y gestionar los resultados.
+            </p><br>
+        </div><br>
+
+        <div class="contenedor1">
+            <div class="carousel">
+                <img src="/images/Imagen1-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen2-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen3-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen4-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen5-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen6-tabla.png" alt="" class="img11">
+            </div>
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div><br>
+        <div class="caracteristicas"><br>
+            <h2>Caracteristicas :</h2>
+
+            <p>
+
+            <ol>
+                <li>La aplicación acepta parámetros de línea de comandos para personalizar la generación de la tabla de
+                    multiplicar. Los
+                    usuarios pueden especificar la base de la tabla y el número máximo hasta el cual se desea
+                    multiplicar.
+                </li>
+
+                <li>Una vez que se ingresan los parámetros, la aplicación genera la tabla de multiplicar
+                    correspondiente,
+                    multiplicando la
+                    base por los números en el rango deseado.
+                </li>
+                <li>La aplicación permite a los usuarios listar la tabla de multiplicar generada en la terminal para su
+                    visualización
+                    inmediata.
+                </li>
+                <li>Los usuarios pueden especificar la ubicación donde desean guardar la tabla de
+                    multiplicar generada
+                    en formato de txt.
+                </li>
+
+            </ol>
+            </p>
+            <h2>Tecnologias Usadas</h2>
+            <p>
+            <ul>
+                <li>JavaScript</li>
+                <li>NodeJS</li>
+                <li>Biblioteca Yargs</li>
+            </ul>
+            </p><br>
+        </div>
+    </section>
+    <script src="./assets/JS/carusel.js"></script>
+    {{>footer}}
+</body>
+
+</html>

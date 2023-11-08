@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion MongoDB</title>
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+    <link rel="stylesheet" href="assets/CSS/headers.css">
+    <link rel="stylesheet" href="assets/CSS/proyecto3.css">
+</head>
+
+<body>
+
+    {{>header}}
+    <section><br>
+        <div class="caracteristicas"><br>
+            <h1>Api Restserver</h1>
+            <p>Este proyecto es un restserver que permite gestionar usuarios y roles. La API expone varias rutas
+                para
+                realizar
+                operaciones CRUD (Crear, Leer, Actualizar y Eliminar) en la entidad de usuario. Las rutas están
+                protegidas por
+                validación de campos y autenticación de roles. Los usuarios pueden registrarse, iniciar sesión y
+                realizar varias
+                operaciones en función de su rol.
+            </p>
+            <p>
+                La aplicación funciona como una API que permite a los clientes realizar operaciones relacionadas
+                con usuarios y
+                roles.
+            </p><br>
+        </div><br>
+
+        <div class="contenedor1">
+            <div class="carousel">
+                <img src="/images/Imagen1-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen2-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen3-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen4-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen5-tabla.png" alt="" class="img11">
+                <img src="/images/Imagen6-tabla.png" alt="" class="img11">
+            </div>
+            <button id="prevBtn">&#10094;</button>
+            <button id="nextBtn">&#10095;</button>
+        </div><br>
+        <div class="caracteristicas"><br>
+            <h2>Caracteristicas :</h2>
+
+            <p>
+
+            <ol>
+                <li>Registro de Usuarios: Los usuarios pueden registrarse proporcionando su nombre, correo y contraseña.
+                    La contraseña se almacena de manera segura utilizando el algoritmo de hashing bcryptjs.
+                </li>
+
+                <li>Autenticación de Usuarios: La aplicación permite a los usuarios iniciar sesión para obtener acceso a
+                    las funciones protegidas de la API.
+                </li>
+                <li>Roles de Usuario: La API admite roles de usuario para controlar el acceso a las diferentes
+                    funciones. Los roles se gestionan a través de la entidad "Role" y se verifican al realizar ciertas
+                    acciones.
+                </li>
+                <li>Validación de Campos: Se realiza una validación de campos en las solicitudes para garantizar que los
+                    datos proporcionados sean válidos y cumplan con los requisitos especificados.
+                </li>
+                <li>Conexión a MongoDB: La aplicación se conecta a una base de datos MongoDB utilizando la biblioteca
+                    Mongoose.
+                </li>
+                <li>Conexión a MongoDB: La aplicación se conecta a una base de datos MongoDB utilizando la biblioteca
+                    Mongoose.
+                </li>
+
+            </ol>
+            </p>
+            <h2>Tecnologias Usadas</h2>
+            <p>
+            <ul>
+                <li>Node.js: El proyecto está basado en Node.js, lo que permite ejecutar JavaScript en el lado del
+                    servidor.</li>
+                <li>Express.js: Se utiliza como marco web para crear la API RESTful y definir rutas, middleware y
+                    controladores.</li>
+                <li>MongoDB: La base de datos no relacional MongoDB se utiliza para almacenar y gestionar datos de
+                    usuario.</li>
+                <li>Mongoose: Mongoose es una biblioteca de modelado de objetos MongoDB para Node.js que simplifica la
+                    interacción con la base de datos MongoDB.</li>
+                <li>Bcryptjs: Bcryptjs se utiliza para el hashing de contraseñas y garantizar la seguridad de las
+                    credenciales de usuario.</li>
+                <li>CORS: El middleware de CORS se utiliza para permitir solicitudes de dominios cruzados.</li>
+                <li>Dotenv: La biblioteca Dotenv se emplea para la gestión de variables de entorno.</li>
+            </ul>
+            </p><br>
+        </div>
+    </section>
+    <script src="./assets/JS/carusel.js"></script>
+    {{>footer}}
+</body>
+
+</html>
